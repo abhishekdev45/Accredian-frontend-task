@@ -3,7 +3,7 @@ import React from 'react';
 import { GiWallet } from 'react-icons/gi';
 import { HiIdentification, HiUserAdd } from "react-icons/hi";
 
-const ReferralProcess = () => {
+const ReferralProcess = ({ openModal }) => {
   return (
     <div className="bg-blue-50 my-28 py-16">
       <h2 className="text-2xl font-bold text-center mb-8">How Do I <span className="text-blue-500">Refer?</span></h2>
@@ -30,6 +30,7 @@ const ReferralProcess = () => {
       <div className="text-center mt-8">
         <button
           className="bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600 transition duration-300"
+          onClick={openModal}
         >
           Refer Now
         </button>
