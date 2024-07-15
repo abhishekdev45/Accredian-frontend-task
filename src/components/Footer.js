@@ -1,6 +1,5 @@
 // src/Footer.js
-import React from 'react';
-
+import React from "react";
 
 const Footer = () => {
   return (
@@ -21,7 +20,7 @@ const Footer = () => {
               <li className="mb-2">Fintech</li>
             </ul>
           </div>
-          
+
           <div>
             <h2 className="text-lg font-bold mb-4">Accredian</h2>
             <ul>
@@ -49,9 +48,7 @@ const Footer = () => {
               <li className="mb-2">Fintech</li>
             </ul>
           </div>
-          
         </div>
-        
       </div>
     </footer>
   );
