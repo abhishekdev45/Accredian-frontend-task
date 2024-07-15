@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import axiosInstance from "../axiosConfig";
 
 const ReferralModal = ({ closeModal }) => {
   const [referrerName, setReferrerName] = useState("");
@@ -27,7 +26,7 @@ const ReferralModal = ({ closeModal }) => {
       refereeName.match(nameRegex)
     ) {
       try {
-        const response = await axiosInstance.post(
+        const response = await axios.post(
           `https://accredian-backend-task-4hp1.onrender.com/api/referrals`,
           {
             referrerName,
