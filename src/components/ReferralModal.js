@@ -27,12 +27,15 @@ const ReferralModal = ({ closeModal }) => {
       refereeName.match(nameRegex)
     ) {
       try {
-        const response = await axiosInstance.post(`api/referrals`, {
-          referrerName,
-          referrerEmail,
-          refereeName,
-          refereeEmail,
-        });
+        const response = await axiosInstance.post(
+          `https://accredian-backend-task-4hp1.onrender.com/api/referrals`,
+          {
+            referrerName,
+            referrerEmail,
+            refereeName,
+            refereeEmail,
+          }
+        );
 
         // Assuming successful response (replace with actual logic)
         if (response.status === 201) {
