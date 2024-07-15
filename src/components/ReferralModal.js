@@ -27,7 +27,7 @@ const ReferralModal = ({ closeModal }) => {
       refereeName.match(nameRegex)
     ) {
       try {
-        const response = await axiosInstance.post(`/referrals`, {
+        const response = await axiosInstance.post(`api/referrals`, {
           referrerName,
           referrerEmail,
           refereeName,
